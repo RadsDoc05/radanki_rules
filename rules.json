@@ -1,1 +1,56 @@
-{"schema":1,"version":"2026.11.16-1","minExtensionVersion":"4.0.0","_about":"RadAnki rules: data only (no code). The built-in copy ships with the extension; a newer copy is read once a day from the radanki_rules GitHub repo. Lists here ADD to the rules built into the code.","features":{"relatedCards":true,"reviewMissesNow":true,"physicsCurriculum":true,"dailyPlan":true},"scheduler":{"newShare":0.18,"newCardCost":2.5,"learningCardCost":1,"slices":{"weak":0.6,"retention":0.25,"longestWaiting":0.15},"minSectionShare":0.03,"recentDays":14,"recentWeight":2,"guessedWeight":0.5,"repeatMissBonus":1,"rotationBoost":1.5,"physicsWeekBoost":1.5,"priorWeight":0.5,"matureIntervalDays":21,"retentionCeiling":0.92,"defaultSecPerCard":11},"sections":{"_comment":"keywords: extra words per section (lowercase, whole words or phrases). strong: a phrase that decides the section by itself. physicsOverrides: phrases that make a question Physics. excludeFromPhysics: phrases ignored when deciding Physics (radiation as a cause of disease).","keywords":{},"strong":{},"physicsOverrides":[],"excludeFromPhysics":[]},"related":{"_comment":"genericWords: answers / topics too generic to search for related deck cards.","genericWords":[],"maxPerMiss":6,"bringBackPerMiss":4},"choicesOnFront":{"_comment":"extraTriggers: phrases in the question sentence that put the answer options on the card front.","extraTriggers":[]},"physicsCurriculum":{"_comment":"Order of physics topics for the weekly physics section. Empty = the deck's own tag order.","order":[],"weeksPerSection":2,"finishWeeksBeforeExam":6}}
+{
+  "schema": 1,
+  "version": "2026.11.16-2",
+  "minExtensionVersion": "4.0.0",
+  "_about": "RadAnki rules: data only (no code). The built-in copy ships with the extension; a newer copy is read once a day from the radanki_rules GitHub repo. Lists here ADD to the rules built into the code.",
+  "features": {
+    "relatedCards": true,
+    "reviewMissesNow": true,
+    "physicsCurriculum": true,
+    "dailyPlan": true
+  },
+  "scheduler": {
+    "newShare": 0.18,
+    "newCardCost": 2.5,
+    "learningCardCost": 0.6,
+    "slices": {
+      "weak": 0.6,
+      "retention": 0.25,
+      "longestWaiting": 0.15
+    },
+    "minSectionShare": 0.03,
+    "recentDays": 14,
+    "recentWeight": 2,
+    "guessedWeight": 0.5,
+    "repeatMissBonus": 1,
+    "rotationBoost": 1.5,
+    "physicsWeekBoost": 1.5,
+    "priorWeight": 0.5,
+    "matureIntervalDays": 21,
+    "retentionCeiling": 0.92,
+    "defaultSecPerCard": 11
+  },
+  "sections": {
+    "_comment": "keywords: extra words per section (lowercase, whole words or phrases). strong: a phrase that decides the section by itself. physicsOverrides: phrases that make a question Physics. excludeFromPhysics: phrases ignored when deciding Physics (radiation as a cause of disease).",
+    "keywords": {},
+    "strong": {},
+    "physicsOverrides": [],
+    "excludeFromPhysics": []
+  },
+  "related": {
+    "_comment": "genericWords: answers / topics too generic to search for related deck cards.",
+    "genericWords": [],
+    "maxPerMiss": 6,
+    "bringBackPerMiss": 4
+  },
+  "choicesOnFront": {
+    "_comment": "extraTriggers: phrases in the question sentence that put the answer options on the card front.",
+    "extraTriggers": []
+  },
+  "physicsCurriculum": {
+    "_comment": "Order of physics topics for the weekly physics section. Empty = the deck's own tag order.",
+    "order": [],
+    "weeksPerSection": 2,
+    "finishWeeksBeforeExam": 6
+  }
+}
