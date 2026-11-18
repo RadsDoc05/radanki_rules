@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "2026.11.18-1",
+  "version": "2026.11.18-2",
   "minExtensionVersion": "4.0.0",
   "_about": "RadAnki rules: data only (no code). The built-in copy ships with the extension; a newer copy is read once a day from the radanki_rules GitHub repo. Lists here ADD to the rules built into the code.",
   "features": {
@@ -69,7 +69,43 @@
   "sections": {
     "_comment": "keywords: extra words per section (lowercase, whole words or phrases). strong: a phrase that decides the section by itself. physicsOverrides: phrases that make a question Physics. excludeFromPhysics: phrases ignored when deciding Physics (radiation as a cause of disease).",
     "keywords": {},
-    "strong": {},
+    "strong": {
+      "Nucs": [
+        "scintigraphy",
+        "scintigraphic",
+        "radiotracer",
+        "radiopharmaceutical",
+        "dmsa",
+        "hepatobiliary imaging",
+        "hepatobiliary scan",
+        "phenobarbital",
+        "hida",
+        "mag3",
+        "mag-3",
+        "dtpa",
+        "tc-99m",
+        "technetium",
+        "i-123",
+        "i-131",
+        "in-111",
+        "ga-68",
+        "lu-177",
+        "sestamibi",
+        "mibg",
+        "octreotide",
+        "dotatate",
+        "psma",
+        "fdg",
+        "pet/ct",
+        "spect",
+        "v/q",
+        "bone scan",
+        "gastric emptying",
+        "thyroid uptake",
+        "ioflupane",
+        "datscan"
+      ]
+    },
     "physicsOverrides": [],
     "excludeFromPhysics": []
   },
