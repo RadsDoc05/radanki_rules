@@ -1,13 +1,18 @@
 {
   "schema": 1,
-  "version": "2026.11.16-2",
+  "version": "2026.11.18-1",
   "minExtensionVersion": "4.0.0",
   "_about": "RadAnki rules: data only (no code). The built-in copy ships with the extension; a newer copy is read once a day from the radanki_rules GitHub repo. Lists here ADD to the rules built into the code.",
   "features": {
     "relatedCards": true,
     "reviewMissesNow": true,
     "physicsCurriculum": true,
-    "dailyPlan": true
+    "dailyPlan": true,
+    "rebalanceOnMiss": true,
+    "autoTracks": true,
+    "sustainability": true,
+    "retentionCheck": true,
+    "physicsPace": true
   },
   "scheduler": {
     "newShare": 0.18,
@@ -28,7 +33,38 @@
     "priorWeight": 0.5,
     "matureIntervalDays": 21,
     "retentionCeiling": 0.92,
-    "defaultSecPerCard": 11
+    "missedShareMax": 0.3,
+    "reviewFloor": 0.4,
+    "defaultSecPerCard": 11,
+    "rebalanceDelayMinutes": 3,
+    "tracks": {
+      "rotation": 0.5,
+      "physics": 0.25,
+      "offRotation": 0.25,
+      "offRotationFromMonths": 12,
+      "offRotationFullMonths": 6,
+      "maxCandidates": 80
+    },
+    "governor": {
+      "gain": 3,
+      "minScale": 0.25,
+      "maxStep": 0.25,
+      "toleranceShare": 0.02,
+      "minTolerance": 30,
+      "minDays": 3
+    },
+    "retentionCheck": {
+      "target": 0.87,
+      "minSamples": 50,
+      "maxShift": 0.2,
+      "newScale": 0.8
+    },
+    "lowRecallBelow": 0.8,
+    "lowRecallBoost": 1.25,
+    "physicsPace": {
+      "minPerDay": 2,
+      "maxPerDay": 15
+    }
   },
   "sections": {
     "_comment": "keywords: extra words per section (lowercase, whole words or phrases). strong: a phrase that decides the section by itself. physicsOverrides: phrases that make a question Physics. excludeFromPhysics: phrases ignored when deciding Physics (radiation as a cause of disease).",
@@ -52,5 +88,19 @@
     "order": [],
     "weeksPerSection": 2,
     "finishWeeksBeforeExam": 6
+  },
+  "siteSections": {
+    "_comment": "A qbank's own section codes -> Core section, per site (lowercase site name), e.g. \"radcoreprep\": { \"XY\": \"GI\" }. Adds to the built-in codes.",
+    "radcoreprep": {}
+  },
+  "support": {
+    "reportUrl": "https://docs.google.com/forms/d/e/1FAIpQLScz94SE4Nec_oWisVQ6aY3IQdiaUPf3bmgBmA1fTZjhcw1ohg/viewform",
+    "helpUrl": "",
+    "ideaUrl": ""
+  },
+  "deckTags": {
+    "_comment": "4.2.2 deck check: extra section names for deck tag hierarchies (plain substrings) and tag roots to ignore",
+    "sectionKeywords": {},
+    "skipRoots": []
   }
 }
