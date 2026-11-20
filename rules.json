@@ -1,6 +1,9 @@
+
+rules.json (latest)
+100%
 {
   "schema": 1,
-  "version": "2026.11.18-2",
+  "version": "2026.11.19-1",
   "minExtensionVersion": "4.0.0",
   "_about": "RadAnki rules: data only (no code). The built-in copy ships with the extension; a newer copy is read once a day from the radanki_rules GitHub repo. Lists here ADD to the rules built into the code.",
   "features": {
@@ -132,7 +135,11 @@
   "support": {
     "reportUrl": "https://docs.google.com/forms/d/e/1FAIpQLScz94SE4Nec_oWisVQ6aY3IQdiaUPf3bmgBmA1fTZjhcw1ohg/viewform",
     "helpUrl": "",
-    "ideaUrl": ""
+    "ideaUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeoqDsigP1DAHpw9mdGLSGFNIJOpLT4gzgEhjeheKs6Shne2g/viewform",
+    "reportPrefill": {
+      "summary": "entry.540624845",
+      "what": "entry.1130022739"
+    }
   },
   "deckTags": {
     "_comment": "4.2.2 deck check: extra section names for deck tag hierarchies (plain substrings) and tag roots to ignore",
@@ -140,3 +147,4 @@
     "skipRoots": []
   }
 }
+Displaying rules.json (latest).
